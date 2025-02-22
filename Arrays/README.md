@@ -1,8 +1,9 @@
 # Array
 
-<!-- TOC -->
-RemoveDuplicates[]
-<!-- TOC -->
+This folder contains the following Python code files:
+
+- [RemoveDuplicates](removeduplicates.py)
+- [Distinctaverages](distinctaverages.py)
 
 # List Operations and Their Time Complexity
 
