@@ -1,4 +1,5 @@
-def isPalindrome(self, x: int) -> bool:
+# with int -> str conversion
+def isPalindrome1(self, x: int) -> bool:
     x = str(x)
     i, j = 0, len(x) -1 
     while i < j:
@@ -8,6 +9,19 @@ def isPalindrome(self, x: int) -> bool:
             i += 1
             j -= 1
     return True
+
+# without int -> string conversion
+def isPalindrome2(self, x: int) -> bool:
+    if x < 0:
+        return False
+    temp = x
+    reverse = 0
+    while temp != 0:
+        digit = temp % 10
+        reverse = reverse * 10 + digit
+        temp = temp // 10
+    return reverse == x
+
 
 '''
 Given an integer x, return true if x is a 
