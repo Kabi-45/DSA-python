@@ -1,3 +1,5 @@
+from typing import Optional
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -24,7 +26,25 @@ class Solution:
             curr.next = list2
         return dummy.next
 
+# Example usage
+ll = Solution()
 
+# Creating ListNode objects for testing
+l1 = ListNode(1, ListNode(2, ListNode(4, ListNode(6))))
+l2 = ListNode(1, ListNode(3, ListNode(7, ListNode(8))))
+
+# Merging the lists
+merged_list = ll.mergeTwoLists(l1, l2)
+
+# Function to print the merged linked list
+def print_list(node):
+    while node:
+        print(node.val, end=" -> ")
+        node = node.next
+    print("None")
+
+# Printing the merged linked list
+print_list(merged_list)
 
 '''You are given the heads of two sorted linked lists list1 and list2.
 
