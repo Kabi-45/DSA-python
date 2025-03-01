@@ -1,5 +1,5 @@
 # method 1 using reverse iteration 
-def removeElement1(self, nums: List[int], val: int) -> int:
+def removeElement1( nums: List[int], val: int) -> int:
         for i in range(len(nums)-1, -1, -1): #O(n)
         #using reverse indexing as positive indexing causes unintended skipping of elements while looping
             if nums[i] == val:
@@ -9,7 +9,7 @@ def removeElement1(self, nums: List[int], val: int) -> int:
 
 
 # method 2 using two pointers
-def removeElement2(self, nums: List[int], val: int) -> int:
+def removeElement2( nums: List[int], val: int) -> int:
         count = 0
         for i in nums: #O(n)
             if i != val:

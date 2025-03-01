@@ -1,4 +1,4 @@
-def strStr(self, haystack: str, needle: str) -> int:
+def strStr( haystack: str, needle: str) -> int:
     if len(needle) > len(haystack):
         return -1
     l, r = 0, len(needle) - 1

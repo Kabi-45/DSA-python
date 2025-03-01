@@ -1,5 +1,5 @@
 # with int -> str conversion
-def isPalindrome1(self, x: int) -> bool:
+def isPalindrome1( x: int) -> bool:
     x = str(x)
     i, j = 0, len(x) -1 
     while i < j:
@@ -11,7 +11,7 @@ def isPalindrome1(self, x: int) -> bool:
     return True
 
 # without int -> string conversion
-def isPalindrome2(self, x: int) -> bool:
+def isPalindrome2( x: int) -> bool:
     if x < 0:
         return False
     temp = x

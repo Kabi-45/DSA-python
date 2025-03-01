@@ -1,4 +1,4 @@
-def removeDuplicates(self, nums: List[int]) -> int:
+def removeDuplicates( nums: List[int]) -> int:
     n = len(nums)
     slow = 0
     for fast in range(1,n):

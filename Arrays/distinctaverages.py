@@ -1,4 +1,4 @@
-def distinctAverages(self, nums: List[int]) -> int:
+def distinctAverages( nums: List[int]) -> int:
     if len(nums) == 2:
         return 1
     nums.sort()
